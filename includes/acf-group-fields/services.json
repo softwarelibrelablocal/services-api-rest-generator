@@ -1,0 +1,170 @@
+[
+    {
+        "key": "group_58284ebe703e9",
+        "title": "Servicios",
+        "fields": [
+            {
+                "key": "field_583feb9cb4d06",
+                "label": "Detalles del Servicio",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_58284ec217aa9",
+                "label": "Descripci\u00f3n",
+                "name": "mgdbq2josn_descripcion",
+                "type": "textarea",
+                "instructions": "Describe qu\u00e9 resultados devuelve este servicio.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 4,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_58286c3829fbe",
+                "label": "Conector",
+                "name": "mgdbq2josn_connector",
+                "type": "relationship",
+                "instructions": "Seleccione el conector para ejecutar la consulta SQL.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "mg_connector"
+                ],
+                "taxonomy": [],
+                "filters": "",
+                "elements": "",
+                "min": 1,
+                "max": 1,
+                "return_format": "id"
+            },
+            {
+                "key": "field_58286b6517aaa",
+                "label": "Consulta SQL",
+                "name": "mgdbq2josn_query",
+                "type": "textarea",
+                "instructions": "Inserte la consulta SQL. Los valores de los par\u00e1metros deber\u00e1n ser indicados entre llaves dobles, ej.: where codigo_postal = {{codigo_postal}}",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_58286bd317aab",
+                "label": "Nombre del servicio",
+                "name": "mgdbq2josn_servicename",
+                "type": "text",
+                "instructions": "Indique el nombre que recibe el servicio en la REST API ej.: \"consulta-padron-rivas\"\r\n(sin espacios o signos)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "nombre-de-servicio",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_583febc6b4d07",
+                "label": "Permisos de uso",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_583febffb4d08",
+                "label": "Usuarios",
+                "name": "mgdbq2josn_service_users",
+                "type": "user",
+                "instructions": "Indique los usuarios que pueden acceder al servicio.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "role": "",
+                "allow_null": 0,
+                "multiple": 1
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "mg_service"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "custom_fields",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "page_attributes",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": 1,
+        "description": ""
+    }
+]

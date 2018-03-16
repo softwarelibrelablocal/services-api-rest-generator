@@ -1,0 +1,73 @@
+[
+    {
+        "key": "group_583ebc5bcec7b",
+        "title": "MGDBQ2JSON Usuarios",
+        "fields": [
+            {
+                "key": "field_583ebc5c26b6f",
+                "label": "API Key del Usuario",
+                "name": "mgdbq2josn_uhashkey",
+                "type": "acf-random-string",
+                "instructions": "El usuario deber\u00e1 especificar la API Key en el par\u00e9metro \"u\" de cada consulta que realice con el plugin MGDBQ2JSON.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "length": 12,
+                "alphanumeric": [
+                    "1"
+                ]
+            },
+            {
+                "key": "field_584fde6344e75",
+                "label": "Estado",
+                "name": "mgdbq2josn_user_state",
+                "type": "select",
+                "instructions" : "Si el usuario está bloqueado no podrá utilizar los servicios a los que está asignado.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "user_roles": [
+                    "administrator"
+                ],
+                "choices": {
+                    "activo": "activo",
+                    "bloqueado": "bloqueado"
+                },
+                "default_value": [
+                    "activo"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "user_form",
+                    "operator": "==",
+                    "value": "edit"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]

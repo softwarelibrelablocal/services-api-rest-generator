@@ -1,0 +1,33 @@
+#connector-checker {
+    margin-top: 10px;
+}
+
+#btn-check-connector {
+    display: inline-block;
+}
+
+#connector-checker .spinner{
+    display: none;
+    float: none;
+}
+
+#connector-checker .spinner.active{
+    display: inline-block;
+}
+
+.message {
+    display: none;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.message.active {
+    display: inline-block;
+}
+
+.success { color: green; }
+.failure { color: red; }
+
+.acf-field input[type="number"] {
+    width: 5%;
+}
